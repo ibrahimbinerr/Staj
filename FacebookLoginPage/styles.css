@@ -1,0 +1,339 @@
+/* Genel stil ayarları */
+
+* {
+    font-family: 'SF Pro Display', sans-serif;
+    /* Yazı tipi olarak SF Pro Display kullanılır, varsa sans-serif yedeği kullanılır */
+    padding: 0;
+    /* Tüm elemanların iç boşluklarını sıfırlar */
+    margin: 0;
+    /* Tüm elemanların dış boşluklarını sıfırlar */
+    box-sizing: border-box;
+    /* Elemanların genişlik ve yükseklik hesaplamalarına iç boşluk ve kenarlıkları dahil eder */
+    text-decoration: none;
+    /* Tüm elemanlardaki metin süslemelerini (alt çizgi vs.) kaldırır */
+}
+
+
+/* Body öğesi için arka plan rengi */
+
+body {
+    background: #f0f2f5;
+    /* Sayfanın arka plan rengini açık gri yapar */
+}
+
+
+/* Ana wrapper konteyneri */
+
+.main-wrapper {
+    height: 720px;
+    /* Kapsayıcının yüksekliğini belirler */
+    display: flex;
+    /* Flexbox düzeni kullanır */
+    justify-content: space-evenly;
+    /* Çocuk elemanları yatayda eşit aralıklarla yerleştirir */
+    align-items: center;
+    /* Çocuk elemanları dikeyde ortalar */
+    padding: 100px 0;
+    /* Üst ve alt kenar boşluklarını ayarlar */
+}
+
+
+/* Sol taraftaki bölüm */
+
+.left-side {
+    display: flex;
+    /* Flexbox düzeni kullanır */
+    flex-direction: column;
+    /* Çocuk elemanları dikeyde sıralar */
+    justify-content: center;
+    /* Çocuk elemanları dikeyde ortalar */
+    align-items: flex-start;
+    /* Çocuk elemanları sol kenara hizalar */
+    margin-top: -125px;
+    /* Üstten boşluk ayarı */
+    margin-right: -125px;
+    /* Sağdan boşluk ayarı */
+}
+
+
+/* Facebook logosu */
+
+.facebook-logo {
+    height: 106px;
+    /* Logonun yüksekliğini ayarlar */
+    margin-left: -30px;
+    /* Sol kenardan boşluk ayarı */
+}
+
+
+/* Açıklama metni */
+
+.description {
+    font-size: 28px;
+    /* Yazı boyutunu ayarlar */
+    line-height: 32px;
+    /* Satır yüksekliğini ayarlar */
+    width: 500px;
+    /* Metnin genişliğini ayarlar */
+}
+
+
+/* Giriş veya kayıt olma formu */
+
+.login-or-register {
+    height: 350px;
+    /* Formun yüksekliğini ayarlar */
+    width: 400px;
+    /* Formun genişliğini ayarlar */
+    display: flex;
+    /* Flexbox düzeni kullanır */
+    flex-direction: column;
+    /* Çocuk elemanları dikeyde sıralar */
+    justify-content: center;
+    /* Çocuk elemanları dikeyde ortalar */
+    align-items: center;
+    /* Çocuk elemanları yatayda ortalar */
+    background-color: white;
+    /* Arka plan rengini beyaz yapar */
+    border-radius: 10px;
+    /* Kenar köşelerini yuvarlatır */
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    /* Kutunun etrafına gölge ekler */
+    padding: 30px;
+    /* İç boşluk ayarı */
+}
+
+
+/* E-posta veya telefon numarası giriş alanı */
+
+.email-input,
+.password-input {
+    border: 1px solid #dddfe2;
+    /* Kenarlık rengi ve kalınlığını ayarlar */
+    border-radius: 8px;
+    /* Kenar köşelerini yuvarlatır */
+    width: 364px;
+    /* Genişlik ayarı */
+    height: 50px;
+    /* Yükseklik ayarı */
+    display: block;
+    /* Blok düzende gösterir */
+    font-size: 18px;
+    /* Yazı boyutunu ayarlar */
+    padding: 12px 16px;
+    /* İç boşluk ayarı */
+    margin-bottom: 15px;
+    /* Alt kenardan boşluk ayarı */
+    letter-spacing: 0.5px;
+    /* Harfler arasındaki boşluğu ayarlar */
+}
+
+
+/* Placeholder rengi */
+
+.email-input::placeholder,
+.password-input::placeholder {
+    color: rgb(148, 148, 148);
+    /* Placeholder metninin rengini ayarlar */
+}
+
+
+/* Giriş yap butonu */
+
+.login-button {
+    background-color: #0866ff;
+    /* Arka plan rengini mavi yapar */
+    color: white;
+    /* Yazı rengini beyaz yapar */
+    border: none;
+    /* Kenarlığı kaldırır */
+    width: 364px;
+    /* Genişlik ayarı */
+    padding: 0 16px;
+    /* İç boşluk ayarı */
+    font-size: 20px;
+    /* Yazı boyutunu ayarlar */
+    line-height: 48px;
+    /* Satır yüksekliğini ayarlar */
+    border-radius: 4px;
+    /* Kenar köşelerini yuvarlatır */
+    margin-bottom: 15px;
+    /* Alt kenardan boşluk ayarı */
+    font-weight: 500;
+    /* Yazı kalınlığını ayarlar */
+    cursor: pointer;
+    /* İmleci pointer yapar */
+}
+
+
+/* Şifremi unuttum linki */
+
+.password-reset {
+    width: 364px;
+    /* Genişlik ayarı */
+    text-align: center;
+    /* Metni ortalar */
+    color: #0866ff;
+    /* Yazı rengini mavi yapar */
+    font-size: 14px;
+    /* Yazı boyutunu ayarlar */
+    font-weight: 500;
+    /* Yazı kalınlığını ayarlar */
+    border-bottom: 1px solid #dddfe2;
+    /* Alt kenarına kenarlık ekler */
+    padding-bottom: 20px;
+    /* Alt iç boşluk ayarı */
+    margin-bottom: 20px;
+    /* Alt kenardan boşluk ayarı */
+    cursor: pointer;
+    /* İmleci pointer yapar */
+}
+
+
+/* Yeni hesap oluştur butonu */
+
+.create-new-button {
+    background-color: #42b72a;
+    /* Arka plan rengini yeşil yapar */
+    color: white;
+    /* Yazı rengini beyaz yapar */
+    border: none;
+    /* Kenarlığı kaldırır */
+    font-size: 17px;
+    /* Yazı boyutunu ayarlar */
+    line-height: 48px;
+    /* Satır yüksekliğini ayarlar */
+    border-radius: 4px;
+    /* Kenar köşelerini yuvarlatır */
+    padding: 0 21px;
+    /* İç boşluk ayarı */
+    margin-bottom: 30px;
+    /* Alt kenardan boşluk ayarı */
+    font-weight: 500;
+    /* Yazı kalınlığını ayarlar */
+    cursor: pointer;
+    /* İmleci pointer yapar */
+}
+
+
+/* Sayfa oluştur bağlantısı */
+
+.create-description {
+    font-size: 15px;
+    /* Yazı boyutunu ayarlar */
+    text-align: center;
+    /* Metni ortalar */
+    margin-top: 25px;
+    /* Üstten boşluk ayarı */
+}
+
+
+/* Footer */
+
+footer {
+    padding: 20px 0;
+    /* Üst ve alt iç boşluk ayarları */
+    background-color: white;
+    /* Arka plan rengini beyaz yapar */
+    height: 120px;
+    /* Yükseklik ayarı */
+    display: flex;
+    /* Flexbox düzeni kullanır */
+    flex-direction: column;
+    /* Çocuk elemanları dikeyde sıralar */
+    justify-content: space-evenly;
+    /* Çocuk elemanları dikeyde eşit aralıklarla yerleştirir */
+    align-items: center;
+    /* Çocuk elemanları yatayda ortalar */
+}
+
+
+/* Alt menü bağlantıları */
+
+nav {
+    width: 900px;
+    /* Genişlik ayarı */
+    margin: 5px 0;
+    /* Üst ve alt kenarlardan boşluk ayarları */
+}
+
+nav a {
+    font-size: 13px;
+    /* Yazı boyutunu ayarlar */
+    text-decoration: none;
+    /* Metin süslemelerini kaldırır */
+    color: rgb(99, 99, 99);
+    /* Yazı rengini gri yapar */
+    margin-right: 12px;
+    /* Sağ kenardan boşluk ayarı */
+    margin-bottom: 8px;
+    /* Alt kenardan boşluk ayarı */
+}
+
+nav a:hover {
+    text-decoration: underline;
+    /* Üzerine gelindiğinde altını çizer */
+}
+
+
+/* Ayırıcı çizgi */
+
+.divider-line {
+    background-color: black;
+    /* Arka plan rengini siyah yapar */
+    height: 1px;
+    /* Yükseklik ayarı */
+    width: 900px;
+    /* Genişlik ayarı */
+}
+
+
+/* Ekran boyutlarına göre medya sorguları */
+
+@media (max-width: 1000px) {
+    .main-wrapper {
+        flex-direction: column;
+        /* Çocuk elemanları dikeyde sıralar */
+        justify-content: flex-start;
+        /* Çocuk elemanları üstten başlayarak sıralar */
+        height: 100vh;
+        /* Tam ekran yüksekliği */
+        padding: unset;
+        /* İç boşlukları kaldırır */
+        margin-top: 20px;
+        /* Üstten boşluk ayarı */
+    }
+    .left-side {
+        display: flex;
+        /* Flexbox düzeni kullanır */
+        flex-direction: column;
+        /* Çocuk elemanları dikeyde sıralar */
+        justify-content: center;
+        /* Çocuk elemanları dikeyde ortalar */
+        align-items: center;
+        /* Çocuk elemanları yatayda ortalar */
+        margin: unset;
+        /* Margini kaldırır */
+        margin-bottom: 30px;
+        /* Alt kenardan boşluk ayarı */
+    }
+    .facebook-logo {
+        margin: unset;
+        /* Margini kaldırır */
+    }
+    .description {
+        text-align: center;
+        /* Metni ortalar */
+        font-size: 25px;
+        /* Yazı boyutunu ayarlar */
+        width: 400px;
+        /* Genişlik ayarı */
+        line-height: 28px;
+        /* Satır yüksekliğini ayarlar */
+    }
+    nav,
+    .divider-line {
+        width: 700px;
+        /* Genişlik ayarı */
+    }
+}
