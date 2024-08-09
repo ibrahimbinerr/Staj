@@ -1,0 +1,282 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+    font-weight: normal;
+    /* Normal ağırlıkta yazı tipi */
+    font-style: normal;
+    /* Normal stil (italik değil) */
+}
+
+
+/* Genel body stili; tüm sayfaya uygulanacak temel stilleri tanımlar. */
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* 'Inter' yazı tipini kullan, eğer bulunamazsa sans-serif kullan */
+    font-size: 16px;
+    /* Temel yazı boyutu */
+    color: #e7e9ea;
+    /* Yazı rengi: açık gri-beyaz */
+    background-color: #000;
+    /* Arka plan rengi: siyah */
+    margin: 0;
+    /* Sayfa kenar boşluklarını sıfırla */
+    padding: 0;
+    /* Sayfa iç kenar boşluklarını sıfırla */
+    box-sizing: border-box;
+    /* Tüm elementlerin padding ve border'ları dahil edilerek hesaplanmasını sağlar */
+    display: flex;
+    /* Sayfayı esnek bir konteyner haline getir */
+    flex-direction: column;
+    /* Esnek kutuların (çocuk öğeler) dikey olarak düzenlenmesini sağlar */
+    justify-content: center;
+    /* Çocuk öğeleri dikeyde ortalar */
+    align-items: center;
+    /* Çocuk öğeleri yatayda ortalar */
+    height: 100vh;
+    /* Sayfa yüksekliği, görüntüleme alanının %100'ü */
+    width: 100vw;
+    /* Sayfa genişliği, görüntüleme alanının %100'ü */
+}
+
+
+/* SVG (Scalable Vector Graphics) stil ayarları */
+
+svg {
+    width: 30%;
+    /* SVG genişliğini sayfa genişliğinin %30'u yap */
+    fill: #e7e9ea;
+    /* SVG içeriğinin rengini açık gri-beyaz yap */
+}
+
+
+/* Buton içindeki img (resim) elementinin stil ayarları */
+
+button img {
+    width: 20px;
+    /* Resmin genişliği 20px olarak ayarlanır */
+}
+
+
+/* Ana container stil ayarları; sayfadaki içerikleri hizalar ve yerleştirir */
+
+.container {
+    display: flex;
+    /* Esnek kutu düzeni */
+    align-content: center;
+    /* İçeriği dikeyde ortalar */
+    justify-content: space-between;
+    /* İçerikler arasına eşit boşluk koyar */
+    width: 80%;
+    /* Konteyner genişliği sayfa genişliğinin %80'i olarak ayarlanır */
+    height: 100%;
+    /* Konteyner yüksekliği sayfa yüksekliğinin %100'ü olarak ayarlanır */
+    gap: 100px;
+    /* İçerikler arasına 100px boşluk koyar */
+}
+
+
+/* Login (giriş) formu için container ayarları */
+
+.container-login {
+    display: flex;
+    /* Esnek kutu düzeni */
+    flex-direction: column;
+    /* İçerikler dikey olarak hizalanır */
+    align-items: flex-start;
+    /* İçerikler sola hizalanır */
+    margin-top: 100px;
+    /* Üstten 100px boşluk bırakılır */
+    width: 680px;
+    /* Konteyner genişliği 680px olarak ayarlanır */
+}
+
+
+/* Ana başlık (h1) stil ayarları */
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    /* 'Inter' yazı tipini kullan */
+    font-size: 64px;
+    /* Yazı boyutu 64px */
+}
+
+
+/* Alt başlık (h2) stil ayarları */
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    /* 'Inter' yazı tipini kullan */
+    font-size: 32px;
+    /* Yazı boyutu 32px */
+}
+
+
+/* Genel buton stil ayarları */
+
+button {
+    font-family: 'Inter', sans-serif;
+    /* 'Inter' yazı tipini kullan */
+    font-size: 15px;
+    /* Yazı boyutu 15px */
+    background-color: #e7e9ea;
+    /* Arka plan rengi açık gri-beyaz */
+    color: #000;
+    /* Yazı rengi siyah */
+    border: none;
+    /* Kenarlık yok */
+    padding: 10px 20px;
+    /* İç kenar boşlukları: üst-alt 10px, sağ-sol 20px */
+    border-radius: 20px;
+    /* Kenarları yuvarlaklaştırır, yarıçapı 20px */
+    width: 280px;
+    /* Buton genişliği 280px */
+    margin: 0;
+    /* Kenar boşlukları sıfır */
+    cursor: pointer;
+    /* İmleci el şekline çevirir */
+    display: flex;
+    /* Esnek kutu düzeni */
+    justify-content: center;
+    /* İçeriği yatayda ortalar */
+    align-items: center;
+    /* İçeriği dikeyde ortalar */
+    gap: 6px;
+    /* İçerikler arasına 6px boşluk koyar */
+}
+
+
+/* Butonların bulunduğu container stil ayarları */
+
+.buttons {
+    display: flex;
+    /* Esnek kutu düzeni */
+    flex-direction: column;
+    /* İçerikler dikey olarak hizalanır */
+    align-items: center;
+    /* İçerikler yatayda ortalanır */
+    gap: 12px;
+    /* İçerikler arasına 12px boşluk koyar */
+}
+
+
+/* Mavi arka planlı buton stili */
+
+button.blue {
+    background-color: #2b9bf0;
+    /* Arka plan rengi mavi */
+    color: #fff;
+    /* Yazı rengi beyaz */
+}
+
+
+/* Kenarlıklı, saydam buton stili */
+
+button.outline {
+    background-color: transparent;
+    /* Arka plan saydam */
+    color: #2b9bf0;
+    /* Yazı rengi mavi */
+    border: 1px solid rgb(83, 100, 113);
+    /* Kenarlık rengi gri */
+}
+
+
+/* Paragraf stili */
+
+p {
+    width: 280px;
+    /* Paragraf genişliği 280px */
+    font-size: 11px;
+    /* Yazı boyutu 11px */
+    margin-top: 0;
+    /* Üst kenar boşluğu sıfır */
+    color: rgb(113, 119, 123);
+    /* Yazı rengi gri */
+}
+
+
+/* Paragraf içindeki bağlantı (anchor) stili */
+
+p a {
+    color: #2b9bf0;
+    /* Bağlantı rengi mavi */
+}
+
+
+/* Alt başlık (h3) stili */
+
+h3 {
+    color: #fff;
+    /* Yazı rengi beyaz */
+    margin: 0;
+    /* Kenar boşlukları sıfır */
+    font-size: 17px;
+    /* Yazı boyutu 17px */
+}
+
+
+/* Sayfa altındaki footer stili */
+
+footer {
+    margin-top: auto;
+    /* Footer'ı sayfanın altına yerleştirir */
+    padding: 32px 20px;
+    /* İç kenar boşlukları: üst-alt 32px, sağ-sol 20px */
+    display: flex;
+    /* Esnek kutu düzeni */
+    gap: 12px;
+    /* İçerikler arasına 12px boşluk koyar */
+    flex-wrap: wrap;
+    /* İçeriklerin birden fazla satıra yayılmasını sağlar */
+}
+
+
+/* Footer içindeki bağlantı (anchor) stili */
+
+footer a {
+    color: #71767b;
+    /* Bağlantı rengi gri */
+    text-decoration: none;
+    /* Alt çizgiyi kaldırır */
+    font-size: 13px;
+    /* Yazı boyutu 13px */
+}
+
+@media screen and (max-width: 768px) {
+    /* Ekran genişliği 768 pikselden daha küçük olduğunda bu stiller uygulanır. */
+    body {
+        overflow: hidden;
+        /* Taşan içerikleri gizler, sayfanın yatay veya dikeyde kaydırılmasını engeller. */
+    }
+    .container {
+        flex-direction: column;
+        /* Konteyner içindeki öğeler dikey olarak hizalanır. */
+        justify-content: flex-start;
+        /* Konteyner içindeki öğeler, üstten başlayarak hizalanır (ortadan değil). */
+        gap: 20px;
+        /* Öğeler arasındaki boşluk 20 piksel olur. */
+        width: 90%;
+        /* Konteyner genişliği, sayfa genişliğinin %90'ı olur. */
+    }
+    .container-login {
+        margin-top: 24px;
+        /* Konteynerin üstünden 24 piksel boşluk bırakılır. */
+    }
+    h1 {
+        width: 400px;
+        /* Başlığın genişliği 400 piksel olur. */
+        margin-bottom: 0;
+        /* Başlığın altından boşluk kaldırılır. */
+        font-size: 40px;
+        /* Başlığın yazı boyutu 40 piksel olur. */
+        line-height: 40px;
+        /* Satır yüksekliği yazı boyutuyla aynı olur, bu da satırlar arasında boşluk bırakmaz. */
+    }
+    svg {
+        width: 50px;
+        /* SVG öğesinin genişliği 50 piksel olur. */
+        margin-top: 100px;
+        /* SVG öğesinin üstünden 100 piksel boşluk bırakılır. */
+    }
+}
