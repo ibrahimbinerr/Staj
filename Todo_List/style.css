@@ -1,0 +1,26 @@
+.completed {
+    text-decoration: line-through;
+    /* Tamamlanmış görevler için metni üstü çizili yapar */
+    color: grey;
+    /* Tamamlanmış görevlerin metin rengini gri yapar */
+}
+
+.low {
+    background-color: #d4edda;
+    /* Düşük öncelikli görevler için arka plan rengini açık yeşil yapar */
+}
+
+.medium {
+    background-color: #ffeeba;
+    /* Orta öncelikli görevler için arka plan rengini sarı yapar */
+}
+
+.high {
+    background-color: #f8d7da;
+    /* Yüksek öncelikli görevler için arka plan rengini açık kırmızı yapar */
+}
+
+div.card-header {
+    text-align: center;
+    /* Kart başlığını yatay olarak ortalar */
+}
